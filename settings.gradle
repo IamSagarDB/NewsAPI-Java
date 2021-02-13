@@ -1,0 +1,9 @@
+dependencyResolutionManagement {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+rootProject.name = "NewsAPI-Java"
+include ':app'
+include ':app:newsapi'
