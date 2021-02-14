@@ -45,6 +45,7 @@ public class NewsApi {
 
 
     /**
+     * getSources
      * @param sourcesRequestBuilder
      * @param newsSources
      */
@@ -177,6 +178,11 @@ public class NewsApi {
     }
 
 
+    /**
+     * getTopHeadlines
+     * @param topHeadlinesRequestBuilder
+     * @param topHeadlines
+     */
     public void getTopHeadlines(TopHeadlinesRequestBuilder topHeadlinesRequestBuilder, TopHeadlines topHeadlines) {
         Map<String, String> map = new HashMap<>();
 
