@@ -13,8 +13,11 @@ import retrofit2.http.QueryMap;
 public interface NewsApiRequest {
 
     @GET(Utils.version + "/sources")
-    Call<NewsSourcesData> getSources(@QueryMap Map<String, String> source_query);
+    Call<NewsSourcesData> getSources(@QueryMap Map<String, String> query);
 
     @GET(Utils.version + "/everything")
-    Call<NewsData> getEverything(@QueryMap Map<String, String> source_query);
+    Call<NewsData> getEverything(@QueryMap Map<String, String> query);
+
+    @GET(Utils.version + "/top-headlines")
+    Call<NewsData> getTopHeadlines(@QueryMap Map<String, String> query);
 }
